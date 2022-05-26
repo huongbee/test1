@@ -7,10 +7,10 @@ mongoose.connect('mongodb+srv://user12345678:iUgdVb8fbnX4CTZo@cluster0.gxiry.mon
 const StudentModel = require('./StudentModel');
 
 app.get('/', async (req, res) => {
-   await StudentModel.insertMany([
-     { name: 'Nguyen Van A', email: 'a@gmail.com', tags: [{ id: 1, value: "AAAAA" }, { id: 2, value: "BBBBB" }, { id: 3, value: "AAAAA" }, { id: 4, value: "BBBBB" }], class: '10A1' },
-     { name: 'Nguyen Van B', email: 'b@gmail.com', tags: [{ id: 1, value: "AAAAA" }, { id: 2, value: "BBBBB" }, { id: 3, value: "AAAAA" }, { id: 4, value: "BBBBB" }], class: '10A1' }
-    ]);
+//    await StudentModel.insertMany([
+//      { name: 'Nguyen Van A', email: 'a@gmail.com', tags: [{ id: 1, value: "AAAAA" }, { id: 2, value: "BBBBB" }, { id: 3, value: "AAAAA" }, { id: 4, value: "BBBBB" }], class: '10A1' },
+//      { name: 'Nguyen Van B', email: 'b@gmail.com', tags: [{ id: 1, value: "AAAAA" }, { id: 2, value: "BBBBB" }, { id: 3, value: "AAAAA" }, { id: 4, value: "BBBBB" }], class: '10A1' }
+//     ]);
    const studentA = await StudentModel.find({
       email: 'a@gmail.com'
     });
