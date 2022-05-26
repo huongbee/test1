@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://user12345678:iUgdVb8fbnX4CTZo@cluster0.gxiry.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://user12345678:iUgdVb8fbnX4CTZo@cluster0.gxiry.mongodb.net/test11?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected'))
 
 const StudentModel = require('./StudentModel');
